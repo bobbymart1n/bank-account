@@ -36,8 +36,14 @@ $(document).ready(function(){
 
     });
     $("#dpbutton").click(function() {
-      newAccount.deposit();
-      $("#balance h4").text(newAccount.balance);
+      if (isNaN(newAccount.deposit()) !== true) {
+        newAccount.deposit();
+        $("#balance h4").text(newAccount.balance);
+      } else {
+        alert("Enter a number....please...come on man.");
+      }
+
+
     });
     console.log(newAccount);
   });
