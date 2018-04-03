@@ -24,10 +24,16 @@ $(document).ready(function(){
 
     $("#balance h4").text(newAccount.balance);
     $("#depo").show();
-
     $("#wdButton").click(function() {
-      newAccount.withdrawl();
-      $("#balance h4").text(newAccount.balance);
+      if (isNaN(newAccount.withdrawl()) !== true) {
+        newAccount.withdrawl();
+        $("#balance h4").text(newAccount.balance);
+      } else {
+        alert("Enter a number....please...come on man.");
+      }
+
+
+
     });
     $("#dpbutton").click(function() {
       newAccount.deposit();
