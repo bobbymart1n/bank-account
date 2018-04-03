@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <form id="form1" action="index.html" method="post">
+    <div class="container">
+      <div class="row">
+        <div class="col form-group mr-3 card">
+          <div class="card-body">
+            <h3>Your name</h3>
+            <input class="form-control" type="text" id="name" required>
+            <h3>Your initial deposit amount</h3>
+            <input class="form-control" type="number" id="initialdeposit" required>
+            <button type="submit" class="btn btn-danger mt-3">Submit</button>
+          </div>
+        </div>
+        <div class="col form-group float-right card" id="depo">
+          <div class="card-body">
+            <input class="form-control mb-3" type="number" id="deposit" placeholder="Make your deposit">
+            <button type="button" class="btn btn-success" id="dpbutton">Submit Deposit</button>
+            <input class="form-control" type="number" id="withdrawl" placeholder="Make your withdrawl">
+            <button type="button" class="btn btn-danger mt-3" id="wdButton">Submit Withdrawl</button>
+          </div>
+        </div>
+      </div>
+
+      </form>
+      <div id="balance">
+        <h3>View your current balance</h3>
+        <h4></h4>
+      </div>
+    </div>
+  </body>
+</html>
